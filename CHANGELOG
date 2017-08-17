@@ -1,0 +1,817 @@
+v1.6.6 Aug 14, 2017
+====================
+
+* Add node 8.3.0, remove node 8.2.0
+  (https://www.pivotaltracker.com/story/show/150120007)
+
+v1.6.5 Aug 01, 2017
+====================
+
+* Add node 6.11.2, remove node 6.11.0
+  (https://www.pivotaltracker.com/story/show/149837609)
+
+* Fix bug: error pushing Node 6.11.1 app to cloud foundry using buildpack 1.6.2
+  (https://www.pivotaltracker.com/story/show/149549527)
+
+* Move installation of modules from finalize to supply
+  (https://www.pivotaltracker.com/story/show/149435525)
+
+* Make bundler binstubs easy to use
+
+v1.6.4 Jul 24, 2017
+====================
+
+* Fix error with bufio.Scanner when contents of files overruns buffer
+  - Merge pull request #96 from mainephd/master
+
+* Add node 8.2.1, remove node 8.1.3
+  (https://www.pivotaltracker.com/story/show/149272693)
+  (https://www.pivotaltracker.com/story/show/149199689)
+
+v1.6.3 Jul 18, 2017
+====================
+
+* Handle wider version range syntaxes, eg. ">=6.11.1 <7.0"
+  (https://www.pivotaltracker.com/story/show/149087771)
+
+v1.6.2 Jul 12, 2017
+====================
+
+* Merge pull request #94 from paulbeattie/master
+  Fix `WEB_CONCURRENCY` and `WEB_MEMORY` from being overwritten at runtime
+
+* Add node 4.8.4, 6.11.1, 7.10.1, and 8.1.4; remove node 4.8.2, 6.10.3, 7.9.0, and 8.1.2
+  (https://www.pivotaltracker.Vcom/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+
+v1.6.1 Jul 10, 2017
+====================
+
+* Add yarn 0.27.5, remove yarn 0.24.6
+  (https://www.pivotaltracker.com/story/show/148175165)
+  (https://www.pivotaltracker.com/story/show/148169407)
+  (https://www.pivotaltracker.com/story/show/148107277)
+  (https://www.pivotaltracker.com/story/show/147751911)
+
+* Add node 8.1.3, remove node 8.1.1
+  (https://www.pivotaltracker.com/story/show/148055013)
+
+v1.6.0 Jun 22, 2017
+=====================
+
+* Add node 8.1.2
+  (https://www.pivotaltracker.com/story/show/147264673)
+
+* Add node 8.1.1, remove node 8.0.0
+  (https://www.pivotaltracker.com/story/show/147158713)
+
+* Add node 6.11.0, remove node 6.10.2
+  (https://www.pivotaltracker.com/story/show/146731549)
+
+* Use MEMORY_AVAILABLE environment value for mem limit
+
+* Convert to libbuildpack for greater consistency across core buildpacks
+  (https://www.pivotaltracker.com/story/show/145065635)
+
+* Amend license, and fix readme links
+  (https://www.pivotaltracker.com/story/show/147439591)
+  (https://www.pivotaltracker.com/story/show/147615323)
+
+v1.5.36 Jun 05, 2017
+=====================
+
+* Add node 8.0.0
+  (https://www.pivotaltracker.com/story/show/146317727)
+
+v1.5.35 May 30, 2017
+=====================
+
+* Set MEMORY_AVAILABLE, WEB_MEMORY, WEB_CONCURRENCY
+  (https://www.pivotaltracker.com/story/show/146183269)
+
+* Set NODE_ENV for production
+  (https://www.pivotaltracker.com/story/show/146183269)
+
+* Add yarn 0.24.6, remove yarn 0.24.4
+  (https://www.pivotaltracker.com/story/show/145961345)
+  (https://www.pivotaltracker.com/story/show/145469419)
+
+* Add flag "OPTIMIZE_MEMORY=true" to turn max_old_space_size on
+  (https://www.pivotaltracker.com/story/show/143873083)
+
+v1.5.34 May 15, 2017
+=====================
+
+* Add yarn 0.24.4, remove yarn 0.23.4
+  (https://www.pivotaltracker.com/story/show/145364383)
+  (https://www.pivotaltracker.com/story/show/145350573)
+
+* Add EOL links for node
+  (https://www.pivotaltracker.com/story/show/144943203)
+
+* Fix NODE_HOME env var
+  (https://www.pivotaltracker.com/story/show/142852389)
+
+* Fix misleading jq error messges
+  (https://www.pivotaltracker.com/story/show/145044169)
+
+* Fix multi-buildpack support in tasks
+  (https://www.pivotaltracker.com/story/show/144964891)
+
+v1.5.33 May 03, 2017
+=====================
+
+* Add node 7.10.0, remove node 7.8.0
+  (https://www.pivotaltracker.com/story/show/144784587)
+
+* Add node 7.9.0, remove node 7.7.4
+  (https://www.pivotaltracker.com/story/show/143534007)
+
+* Add node 6.10.3, remove node 6.10.1
+  (https://www.pivotaltracker.com/story/show/144725819)
+
+* Add node 4.8.3, remove node 4.8.1
+  (https://www.pivotaltracker.com/story/show/144719795)
+
+* Add yarn 0.23.4, remove yarn 0.22.0
+  (https://www.pivotaltracker.com/story/show/144725823)
+  (https://www.pivotaltracker.com/story/show/143255621)
+
+* Add Multi Buildpack support
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Ensure yarn install does not reach out to internet
+  (https://www.pivotaltracker.com/story/show/142334089)
+
+* Use correct package manager in unmet deps warning
+  (https://www.pivotaltracker.com/story/show/143837939)
+
+* Add Appdynamics support
+  (https://www.pivotaltracker.com/story/show/143585835)
+
+v1.5.32 Apr 04, 2017
+=====================
+
+* Add node 4.8.2, remove node 4.8.0
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add node 6.10.2, remove node 6.10.0
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add node 7.8.0, remove node 7.7.3
+  (https://www.pivotaltracker.com/story/show/142657575)
+
+
+v1.5.31 Mar 27, 2017
+=====================
+
+* Add node 4.8.1, Remove node 4.7.3
+  - Set Node 4.8.1 as the default
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Add node 6.10.1, remove node 6.9.5
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Add node 7.7.3, remove node 7.5.0
+  (https://www.pivotaltracker.com/story/show/141738953)
+
+* Add node 7.7.4, Remove node 7.6.0
+  (https://www.pivotaltracker.com/story/show/142188245)
+  (https://www.pivotaltracker.com/story/show/141360971)
+
+* Add yarn 0.22.0, remove yarn 0.21.2
+  (https://www.pivotaltracker.com/story/show/141155101)
+  (https://www.pivotaltracker.com/story/show/140681333)
+
+* Add support for supply buildpacks
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Use pessimistic locking on ruby version in Gemfile
+  (https://www.pivotaltracker.com/story/show/140770891)
+
+v1.5.30 Feb 27, 2017
+=====================
+
+* Add node 7.6.0 remove node 7.4.0
+  (https://www.pivotaltracker.com/story/show/140375739)
+
+* Add node 6.10.0 remove node 6.9.4
+  (https://www.pivotaltracker.com/story/show/140375739)
+
+* Add node 4.8.0 remove node 4.7.2
+  (https://www.pivotaltracker.com/story/show/140373175)
+
+* Add yarn 0.21.2, remove yarn 0.20.0
+  (https://www.pivotaltracker.com/story/show/139882371)
+
+v1.5.29 Feb 07, 2017
+=====================
+
+* Add EOL dates for node
+  (https://www.pivotaltracker.com/story/show/137288317)
+
+* Add node 7.5.0, remove node 7.3.0
+  (https://www.pivotaltracker.com/story/show/138780181)
+
+* Add node 6.9.5, remove node 6.9.3
+  (https://www.pivotaltracker.com/story/show/138771375)
+
+* Add node 4.7.3, remove node 4.7.1
+  (https://www.pivotaltracker.com/story/show/138773607)
+
+* Add yarn 0.20.0, remove yarn 0.19.1
+  (https://www.pivotaltracker.com/story/show/138614091)
+
+v1.5.28 Jan 24, 2017
+=====================
+
+* Remove node 0.12.x version line
+  (https://www.pivotaltracker.com/story/show/136591333)
+
+* Remove node 5.x version line
+  (https://www.pivotaltracker.com/story/show/136591333)
+
+* Add yarn 0.19.1, remove yarn 0.19.0
+  (https://www.pivotaltracker.com/story/show/138003527)
+
+* Add yarn to cached buildpack
+  (https://www.pivotaltracker.com/story/show/136510177)
+
+v1.5.27 Jan 10, 2017
+=====================
+
+* Catch excecptions from buildpack version warning scripts
+  - Under some non-standard CF deployment configurations, it was possible for these scripts to
+  error out. As they are purely informative, this should never happen.
+  (https://www.pivotaltracker.com/story/show/137351597)
+
+v1.5.26 Jan 09, 2017
+=====================
+
+* Add warning if downloaded dependency is not the latest patch version for a
+given major and minor version
+  (https://www.pivotaltracker.com/story/show/134863437)
+
+* Add new version warning to nodejs buildpack
+  (https://www.pivotaltracker.com/story/show/135234395)
+
+* Yarn support added, activated if yarn.lock file present
+  (https://www.pivotaltracker.com/story/show/136345251)
+
+* Add node 7.4.0, remove node 7.2.1
+  (https://www.pivotaltracker.com/story/show/137044385)
+
+* Add node 7.3.0, remove node 7.2.0
+  (https://www.pivotaltracker.com/story/show/136461121)
+
+* Add node 6.9.4, remove node 6.9.2
+  (https://www.pivotaltracker.com/story/show/137135283)
+
+* Add node 6.9.3, remove node 6.9.1
+  (https://www.pivotaltracker.com/story/show/136991485)
+
+* Add node 4.7.2, remove node 4.7.0
+  (https://www.pivotaltracker.com/story/show/137135283)
+
+* Add node 4.7.1, remove node 4.6.2
+  (https://www.pivotaltracker.com/story/show/136994135)
+
+* Add node 0.12.18, remove node 0.12.16
+  (https://www.pivotaltracker.com/story/show/136501265)
+
+v1.5.25 Dec 15, 2016
+=====================
+
+* Add node 7.2.1, remove node 7.1.0
+  (https://www.pivotaltracker.com/story/show/135658433)
+
+* Add node 6.9.2, remove node 6.9.0
+  (https://www.pivotaltracker.com/story/show/135643989)
+
+* Add node 4.7.0, remove node 4.6.1
+  (https://www.pivotaltracker.com/story/show/135648535)
+
+v1.5.24 Dec 01, 2016
+=====================
+
+* Add node 7.2.0, remove node 7.0.0
+  (https://www.pivotaltracker.com/story/show/134823269)
+
+* Provide a "protip" when Node.js modules are not vendored
+  (https://www.pivotaltracker.com/story/show/116369631)
+
+* Rebuild and change path for node binaries
+  - We identified a potential, but unlikely, attack vector in our continuous
+    integration system. Our own auditing strongly suggests that this attack
+    vector was not taken advantage of. However, out of an abundance of caution,
+    we are rebuilding all buildpack dependencies that we maintain.
+
+v1.5.23 Nov 09, 2016
+=====================
+
+* Add node 7.1.0
+  (https://www.pivotaltracker.com/story/show/133966203)
+
+* Add node 7.0.0
+  (https://www.pivotaltracker.com/story/show/133105865)
+
+* Add node 6.9.1, remove node 6.8.1
+  (https://www.pivotaltracker.com/story/show/132796533)
+
+* Add node 4.6.2, remove node 4.6.0
+  (https://www.pivotaltracker.com/story/show/133955125)
+
+* Remove node 0.10.47 and 0.10.48
+  - Node.js 0.10.x support ends on October 31st, 2016
+  - Node.js 0.10.x will no longer be in the nodejs-buildpack
+  (https://www.pivotaltracker.com/story/show/132026695)
+
+* Ensure all downloaded binaries have checksums verified
+  (https://www.pivotaltracker.com/story/show/128099189)
+
+* Remove vendored node binary executable
+  (https://www.pivotaltracker.com/story/show/128498051)
+
+v1.5.22 Oct 19, 2016
+=====================
+
+* Add node 6.9.0 and 6.8.1, remove node 6.6.0 and 6.7.0
+  (https://www.pivotaltracker.com/story/show/132362527)
+  (https://www.pivotaltracker.com/story/show/132362087)
+  (https://www.pivotaltracker.com/story/show/132198199)
+  (https://www.pivotaltracker.com/story/show/132691907)
+
+* Add node 0.10.48, remove node 0.10.46
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Add node 0.12.17, remove node 0.12.15
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Add node 4.6.1, remove node 4.5.0
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Address USN-3087-1: OpenSSL vulnerabilities with node 6.8.1 and 6.9.0
+  (https://www.pivotaltracker.com/story/show/130992485)
+
+* NOTICE: Node.js 0.10 will be removed after October 31, 2016 due to end of LTS
+  (https://www.pivotaltracker.com/story/show/132026695)
+
+v1.5.21 Sep 28, 2016
+=====================
+
+* Address USN-3087-1: OpenSSL vulnerabilities by updating node.
+  The new versions of node included in this buildpack are built
+  against the patched version of OpenSSL
+  (https://www.pivotaltracker.com/story/show/130945067)
+
+* Add node 0.10.47, remove node 0.10.45
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 0.12.16, remove node 0.12.14
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 4.6.0, remove node 4.4.7
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 6.7.0, remove node 6.5.0
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+v1.5.20 Sep 19, 2016
+=====================
+
+* Add node 6.6.0, remove node 6.4.0
+  (https://www.pivotaltracker.com/story/show/130488207)
+
+* Remove Heroku references from staging output
+  (https://www.pivotaltracker.com/story/show/127931269)
+
+v1.5.19 Sep 01, 2016
+=====================
+
+* Add node 4.5.0, remove node 4.4.6
+  (https://www.pivotaltracker.com/story/show/128431641)
+
+* Add node 6.4.0, remove node 6.3.0
+  (https://www.pivotaltracker.com/story/show/128863283)
+
+* Add node 6.5.0, remove node 6.3.1
+  (https://www.pivotaltracker.com/story/show/129366607)
+
+* Add support for New Relic configuration through service binding
+  (https://www.pivotaltracker.com/story/show/110040634)
+
+* Filter credentials from dependency urls printed during staging
+  (https://www.pivotaltracker.com/story/show/126514693)
+
+* Add default_versions support for specifying node default version
+  (https://www.pivotaltracker.com/story/show/126394943)
+
+v1.5.18 Jul 25, 2016
+=====================
+
+* Add nodejs 6.3.1, remove nodejs 6.2.2
+  (https://www.pivotaltracker.com/story/show/126830705)
+
+v1.5.17 Jul 15, 2016
+=====================
+
+* Make buildpacks.cloudfoundry.org the default url for buildpack dependencies
+  (https://www.pivotaltracker.com/story/show/121757949)
+
+* Update node to 4.4.7
+  (https://www.pivotaltracker.com/story/show/123264921)
+
+* Update node to 6.3.0
+  (https://www.pivotaltracker.com/story/show/125266811)
+
+v1.5.16 Jun 28, 2016
+=====================
+
+* Add nodejs 0.10.46, remove nodejs 0.10.44
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 0.12.15, remove nodejs 0.12.13
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 4.4.6, remove nodejs 4.4.4
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 5.12.0, remove nodejs 5.10.1
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 6.2.2. Remove nodejs 6.2.0
+  (https://www.pivotaltracker.com/story/show/121759045)
+
+v1.5.15 Jun 08, 2016
+=====================
+
+* Add nodejs 6.2.0 and 6.2.1, remove nodejs 6.0.0 and 6.1.0
+  (https://www.pivotaltracker.com/story/show/120806559)
+  (https://www.pivotaltracker.com/story/show/119775517)
+
+* Add nodejs 4.4.5, remove nodejs 4.4.3
+  (https://www.pivotaltracker.com/story/show/120225945)
+
+* Add a helpful error message for case where npm fails to download
+  (https://www.pivotaltracker.com/story/show/118775597)
+
+v1.5.14 May 06, 2016
+=====================
+
+* Bump versions of nodejs to address openssl vulnerabilities
+
+  More information can be found here
+  https://nodejs.org/en/blog/vulnerability/openssl-may-2016/
+
+  Version changes:
+
+  - Replace 0.10.43 with 0.10.45
+  - Replace 0.12.12 with 0.12.14
+  - Replace 4.4.2 with 4.4.4
+  - Replace 5.11.0 with 5.11.1
+  - Add 6.1.0
+
+  (https://www.pivotaltracker.com/story/show/119080687)
+  (https://www.pivotaltracker.com/story/show/119053109)
+  (https://www.pivotaltracker.com/story/show/119050895)
+  (https://www.pivotaltracker.com/story/show/119055011)
+
+v1.5.13 Apr 27, 2016
+=====================
+
+* Add nodejs 6.0.0
+
+  Note that many node packages do not yet and possibly will not support the node 6 series
+
+  Ex. bson_ext is not compatible with v8 and node 6: https://github.com/christkv/bson-ext/issues/28#issuecomment-212258411
+
+  (https://www.pivotaltracker.com/story/show/118424939)
+
+* Fix bug where versions with an odd minor semver portion get filtered out
+  during version resolution
+  (https://www.pivotaltracker.com/story/show/118436661)
+
+* Add nodejs 5.11.0, Remove 5.10.0
+  (https://www.pivotaltracker.com/story/show/118134235)
+
+v1.5.12 Apr 19, 2016
+=====================
+
+* Add nodejs 4.4.3
+  (https://www.pivotaltracker.com/story/show/117495347)
+
+v1.5.11 Apr 11, 2016
+=====================
+
+* Add node 5.10.1
+  (https://www.pivotaltracker.com/story/show/117023173)
+
+v1.5.10 Apr 05, 2016
+=====================
+
+* Add nodejs 0.12.13, 0.10.44, 4.4.2, 5.10.0, remove nodejs 0.12.11,
+  0.10.42, 4.4.1, 5.9.1
+  (https://www.pivotaltracker.com/story/show/116741361)
+
+v1.5.9 Mar 30, 2016
+====================
+
+* Add nodejs 4.4.1 and 5.9.1, remove nodejs 4.4.0 and 5.9.0
+  (https://www.pivotaltracker.com/story/show/116416441)
+
+* Improve error messaging for unsupported versions and unable to resolve version strings
+  (https://www.pivotaltracker.com/story/show/115735397)
+
+* Specified location of native module headers for npm rebuild command. Fixes [#115780623]
+  (https://www.pivotaltracker.com/story/show/115735397)
+
+* Add nodejs 5.9.0, remove 5.8.0
+  (https://www.pivotaltracker.com/story/show/116036807)
+
+* set stable release for nodejs to latest 4.x
+  (https://www.pivotaltracker.com/story/show/115599647)
+
+
+v1.5.8 Mar 14, 2016
+====================
+
+* Add v0.12.12, v4.4.0, and v5.8.0, removed v0.12.10, v4.3.2, and v5.7.1
+  (https://www.pivotaltracker.com/story/show/114974911)
+
+* Revert upstream pre/post build scripts
+  (https://www.pivotaltracker.com/story/show/1115592677)
+
+* Remove old log message about resolving version via semver.io
+  (https://www.pivotaltracker.com/story/show/114725733)
+
+v1.5.7 Mar 04, 2016
+====================
+
+* Add v0.12.11 and v0.10.43, removed v0.12.09 and v0.10.41
+  (https://www.pivotaltracker.com/story/show/114974911)
+
+* Added v4.3.2 and v5.7.1, removed v5.7.0 and v4.3.1
+  (https://www.pivotaltracker.com/story/show/114951809)
+
+v1.5.6 Feb 29, 2016
+====================
+* Add node versions v0.12.10, v0.10.42, v4.3.1, v5.7.0
+
+  * Remove node versions v0.12.7, v0.10.40, v4.2.5, v5.5.0
+  (https://pivotaltracker.com/story/show/114348831)
+
+* Merge remote-tracking branch 'upstream/master' into develop
+  (https://github.com/cloudfoundry/nodejs-buildpack/commit/6fd264ec732bac5f8cceb86f733457a65ef351b0)
+  * Merge pull request #286 from afeld/patch-1
+
+  * use HTTPS for downloading Node
+
+v1.5.5 Jan 26, 2016
+====================
+
+* Added v4.2.5 and v5.5.0, removed v4.2.3 and v5.1.1.
+  (https://www.pivotaltracker.com/story/show/111537310)
+
+* Remove node 0.11.15 and 0.11.16
+  (https://www.pivotaltracker.com/story/show/109538496)
+
+v1.5.4 Dec 04, 2015
+====================
+
+* Add support for Node 0.10.41, 0.12.9, 4.2.3, and 5.1.1
+* Remove support for Node 0.10.38, 0.12.6, and 4.2.2
+  (https://www.pivotaltracker.com/story/show/109526542)
+
+v1.5.3 Nov 16, 2015
+====================
+
+* Developers are given detailed, helpful instructions when they attempt
+  to stage an application whose dependency is not found in the manifest.
+  (https://www.pivotaltracker.com/story/show/107939104)
+
+v1.5.2 Nov 12, 2015
+====================
+* Gracefully handle unsupported or unreleased node builds and avoid using
+heroku binaries.
+  (https://www.pivotaltracker.com/story/show/107939290)
+
+v1.5.1 Nov 06, 2015
+====================
+
+* Add support for Node 4.2.2
+  https://github.com/cloudfoundry/nodejs-buildpack/issues/32
+
+* `bin/detect` outputs buildpack details
+  (https://www.pivotaltracker.com/story/show/100757820)
+
+* Merged upstream v75..v86 (see `CHANGELOG.md`)
+
+
+v1.5.0 Jul 20, 2015
+====================
+
+* remove versions 0.8.x and 0.9.x from manifest
+  (https://www.pivotaltracker.com/story/show/97770112)
+
+* Include CF built binaries
+  (https://www.pivotaltracker.com/story/show/97136960)
+
+v1.4.2 Jul 13, 2015
+====================
+
+* Security upgrade to nodejs 0.12.7
+  Add support for node version 0.10.40
+  Remove support for node version 0.10.37
+  (https://www.pivotaltracker.com/story/show/98855140)
+
+v1.4.1 Jul 09, 2015
+====================
+
+* Security upgrade to nodejs 0.12.6
+  (https://www.pivotaltracker.com/story/show/98683546)
+
+v1.4.0 Jun 24, 2015
+====================
+
+* Merge upstream changes from Heroku (sha: f1b195427424922274807151e0dd8d1948d03ebb):
+  * Improvements to app caching logic
+
+* Remove lucid-specific binaries from manifest.yml
+	(https://www.pivotaltracker.com/story/show/96135874)
+
+* Give helpful message on unsupported stacks
+  (https://www.pivotaltracker.com/story/show/96590188)
+
+v1.3.4 Jun 08, 2015
+====================
+
+* Add support for nodejs 0.12.4
+  (https://www.pivotaltracker.com/story/show/95004952)
+
+* Provide more explicit error message for missing options
+  (https://www.pivotaltracker.com/story/show/95473896)
+
+v1.3.3 May 22, 2015
+====================
+
+* Fix bugs regarding package.json and node_modules directory interaction
+  (https://www.pivotaltracker.com/story/show/94525966)
+  (https://www.pivotaltracker.com/story/show/94516870)
+
+v1.3.2 May 20, 2015
+====================
+
+* Merge upstream changes from Heroku up to SHA d8fbb5b05be58c863f0c67f4e0e394c83b0ab5a3
+  (https://www.pivotaltracker.com/story/show/93482010)
+
+v1.3.1 May 07, 2015
+====================
+
+* Add all Node.js versions to versions.json, resolving an issue for cached
+  buildpacks and old Node.js versions
+  (https://www.pivotaltracker.com/n/projects/1042066/stories/93717296)
+* Bump buildpack-packager to support custom buildpack manifests.
+* Remove unsupported Node.js versions for for lucid64
+  (https://www.pivotaltracker.com/n/projects/1042066/stories/93218340)
+
+v1.3.0 Apr 17, 2015
+====================
+
+* Deprecated many node versions, only currently support (https://www.pivotaltracker.com/story/show/90697200)
+  - 0.8.27
+  - 0.8.28
+  - 0.9.11
+  - 0.9.12
+  - 0.10.37
+  - 0.10.38
+  - 0.11.15
+  - 0.11.16
+  - 0.12.1
+  - 0.12.2
+
+* Document Contribution guidelines (https://www.pivotaltracker.com/story/show/92459188)
+* Added cache-busting for stack switching (https://www.pivotaltracker.com/story/show/91630606)
+* Merge upstream changes from Heroku up to SHA 40214da800dadf60b9a746514ea55140f5863380 (https://www.pivotaltracker.com/story/show/90537740
+
+
+v1.2.2 Mar 26, 2015
+====================
+
+* Default to latest stable verion 0.12.0 in cached mode
+	(https://www.pivotaltracker.com/story/show/89792504)
+
+
+v1.2.1 Mar 24, 2015
+====================
+
+* Add support for node binary version 0.12.0
+	(https://www.pivotaltracker.com/story/show/89792504)
+
+* Add support for node binary version 0.10.38
+	(https://www.pivotaltracker.com/story/show/90724656)
+
+v1.2.0 Mar 17, 2015
+====================
+
+* Support cflinuxfs2 stack.
+  (https://www.pivotaltracker.com/story/show/88174344)
+
+* Removed versions 0.8.6, 0.10.14, and 0.11.4
+  (https://www.pivotaltracker.com/story/show/90294404)
+	(https://www.pivotaltracker.com/story/show/90366324)
+
+* Reference git repos by https in cf.Gemfile
+  (https://www.pivotaltracker.com/story/show/90365848)
+
+* Add checksum to `manifest.yml` for all binaries.
+	(https://www.pivotaltracker.com/story/show/89503124)
+
+v1.1.1 Dec 22, 2014
+====================
+
+* Repairs regression in NodeJS version metadata.
+  (https://www.pivotaltracker.com/story/show/84963472)
+  (https://www.pivotaltracker.com/story/show/85025278)
+
+v1.1.0 Dec 10, 2014
+====================
+
+* Merge upstream changes
+  (https://www.pivotaltracker.com/story/show/83960086)
+  * Prune devDependencies from cache
+    (https://github.com/heroku/heroku-buildpack-nodejs/pull/115)
+
+* Introduce new offline dependency packaging system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83886038)
+
+* Introduce new runtime dependency translation system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83483872)
+  (https://www.pivotaltracker.com/story/show/83504664)
+
+* Update the README with Machete instructions
+  (https://www.pivotaltracker.com/story/show/82692644)
+
+v1.0.4 Sep 30, 2014
+====================
+
+* Resolve broken buildpack version output.
+  (https://www.pivotaltracker.com/story/show/79781536)
+  (https://www.pivotaltracker.com/n/projects/966314/stories/79702506)
+
+v1.0.3 Sep 29, 2014
+====================
+
+* Merge upstream change:
+  * Resolve issue with bower failing to build against commit hashes
+    (https://github.com/heroku/heroku-buildpack-nodejs/issues/99)
+    (https://github.com/heroku/heroku-buildpack-nodejs/pull/121)
+
+
+v1.0.2 Sep 22, 2014
+====================
+
+* Support for new semver JSON response format
+
+* Update buildpack-packager
+  (https://www.pivotaltracker.com/story/show/79126294)
+  (https://www.pivotaltracker.com/story/show/77627098)
+
+* Update Machete
+
+* Merge upstream changes
+  * broken link to CONTRIBUTING.md
+  * npm reverted to a backwards compatible cert
+
+v1.0.1 Jul 22, 2014
+====================
+
+* Improve documentation and make the README CF specific.
+  (https://www.pivotaltracker.com/story/show/69192654)
+  (https://www.pivotaltracker.com/story/show/73157816)
+
+* Switch to new Cloud Foundry offline dependency framework
+  (https://www.pivotaltracker.com/story/show/73384192)
+
+* Improve version imprinting
+  (https://www.pivotaltracker.com/story/show/73384192)
+
+* Use Ruby 2.1.1 for packaging
+
+* Add test app without vendored dependencies
+
+* Use Procfile instead of startup command for test apps
+
+* Fix: Offline mode should not attempt to use public networks
+  (https://www.pivotaltracker.com/story/show/73420832)
+
+* Fix: NomNom attempts to reach out to a public network
+
+v1.0.0 May 19, 2014
+===================
+
+* Modify [the Heroku Nodejs buildpack](https://github.com/heroku/heroku-buildpack-nodejs) to
+  support offline mode.

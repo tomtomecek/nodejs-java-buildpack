@@ -1,0 +1,33 @@
+#!/bin/bash
+set -euo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+export BUILDPACK_DIR=`dirname $(readlink -f ${BASH_SOURCE%/*})`
+export DEPS_DIR="$BUILD_DIR/.cloudfoundry"
+mkdir -p "$DEPS_DIR/0"
+mkdir -p "$BUILD_DIR/.profile.d"
+echo "export DEPS_DIR=\$HOME/.cloudfoundry" > "$BUILD_DIR/.profile.d/0000_set-deps-dir.sh"
+
+install_java() {
+  local dir="$1"
+
+  local download_url="https://www.dropbox.com/s/jglji35h6w85uw9/jdk-8u73-linux-x64.tar.gz?dl=0"
+  echo "Downloading JAVA [$download_url]"
+  curl  --silent --fail --retry 5 --retry-max-time 15 -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" "$download_url" -o /tmp/java.tar.gz || (echo "Unable to download java; does it exist?" && false)
+  echo "Download complete!"
+
+  echo "Installing JAVA"
+  mkdir /tmp/jdk
+  mkdir $dir
+  tar xzf /tmp/java.tar.gz -C /tmp/jdk
+  rm -rf $dir/*
+  mv /tmp/jdk/jdk1.8.0_73/* $dir
+  chmod +x $dir/bin
+  echo "Installation complete!"
+}
+
+install_java "$BUILD_DIR/.heroku/java"
+
+$BUILDPACK_DIR/bin/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
+$BUILDPACK_DIR/bin/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
