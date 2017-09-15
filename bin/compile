@@ -19,15 +19,14 @@ install_java() {
 
   echo "Installing JAVA"
   mkdir /tmp/jdk
-  mkdir $dir
+  mkdir -p $dir
   tar xzf /tmp/java.tar.gz -C /tmp/jdk
-  rm -rf $dir/*
   mv /tmp/jdk/jdk1.8.0_73/* $dir
   chmod +x $dir/bin
   echo "Installation complete!"
 }
 
-install_java "$BUILD_DIR/.heroku/java"
+install_java "$BUILD_DIR/.cloudfoundry/java"
 
 $BUILDPACK_DIR/bin/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
 $BUILDPACK_DIR/bin/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0

@@ -26,7 +26,7 @@ detect_memory() {
   esac
 }
 
-export PATH="$PATH:$HOME/bin:$HOME/node_modules/.bin"
+export PATH="$PATH:$HOME/bin:$HOME/node_modules/.bin:$HOME/.cloudfoundry/java/bin"
 
 calculate_concurrency
 
