@@ -26,7 +26,7 @@ install_java() {
   echo "Installation complete!"
 }
 
-install_java "$BUILD_DIR/.cloudfoundry/java"
+install_java "$DEPS_DIR/0/java"
 
-$BUILDPACK_DIR/bin/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
-$BUILDPACK_DIR/bin/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
+$BUILDPACK_DIR/packager/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
+$BUILDPACK_DIR/packager/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" 0
