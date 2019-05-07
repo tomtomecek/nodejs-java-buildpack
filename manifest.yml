@@ -91,5 +91,5 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/node/node-8.3.0-linux-x64-8e2f91f8.tgz
   md5: 8e2f91f82133925d4a739f2044bef6cf
   cf_stacks:
-  - cflinuxfs2
+  - cflinuxfs3
 pre_package: scripts/build.sh
